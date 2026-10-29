@@ -1,0 +1,35 @@
+:root{--orbit-accent:#74dfec;--orbit-purple:#a38bff}
+[data-theme=dark]{--global-bg:#080d19;--card-bg:#111827;--font-color:#d4dbea;--text-highlight-color:#f0f5ff;--light-grey:#8994ab;--white:#f0f5ff;--btn-bg:#647bd9;--btn-hover-color:#7c9aee;--hr-border:#27334c}
+body{font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+#page-header.full_page{height:76vh;min-height:540px;max-height:880px;background-position:center;background-color:#080d19}
+#page-header:before{background:linear-gradient(90deg,rgba(5,9,20,.42),rgba(5,9,20,.04))}
+#page-header.full_page #site-info{top:43%;left:8%;width:60%;text-align:left;padding:0}
+#site-info:before{content:"JOE / DIGITAL GARDEN";display:block;color:#81dce8;font:500 12px/2 ui-monospace,monospace;letter-spacing:4px;margin-bottom:20px}
+#site-title{font-size:clamp(42px,5vw,76px)!important;letter-spacing:4px;font-weight:800!important;text-shadow:none!important}
+#site-subtitle{font-size:17px!important;letter-spacing:2px;color:#aebbd6;margin-top:20px;min-height:28px}
+#page-header.full_page #site-title,#page-header.full_page #site-subtitle{text-align:left}
+#site-info:after{content:"探索 · 构建 · 记录";display:block;font-size:12px;letter-spacing:5px;color:#93a2bb;margin-top:26px}
+#nav{padding:0 5%;height:78px;align-items:center}
+#nav .site-name{letter-spacing:2px;font-size:20px}
+#nav .menus_items .menus_item{padding:0 0 0 26px}
+.layout{max-width:1280px;padding-top:42px}
+#recent-posts>.recent-post-item,.card-widget,#archive,#page,#post{border:1px solid rgba(149,173,221,.12);border-radius:18px!important;box-shadow:0 12px 40px rgba(0,0,0,.12)!important}
+#recent-posts>.recent-post-item{height:300px;margin-top:24px;transition:transform .25s,border-color .25s}
+#recent-posts>.recent-post-item:hover{transform:translateY(-4px);border-color:rgba(116,223,236,.4)}
+#recent-posts>.recent-post-item>.recent-post-info>.article-title{font-size:26px;font-weight:700;letter-spacing:1px}
+.article-meta-wrap{font-size:12px!important;letter-spacing:.4px}
+.card-widget{margin-top:24px!important}
+.avatar-img img{border-radius:26px!important}
+.author-info-name{font-size:20px!important;font-weight:700;overflow-wrap:anywhere}
+.author-info-description{color:#9caac2;font-size:13px}
+#card-info-btn{border-radius:10px;background:linear-gradient(110deg,#4179b9,#7463c1)!important}
+#footer{background:#080d19!important;border-top:1px solid rgba(149,173,221,.12)}
+#footer:before{background:transparent!important}
+#footer-wrap{color:#8493ae;padding:35px 20px;line-height:2}
+#article-container a{color:#70d2e5}
+#article-container code{border-radius:5px}
+#article-container figure.highlight{border:1px solid #26334b;border-radius:12px}
+#rightside>div>button{border-radius:10px}
+@media(min-width:901px){#aside-content{width:27%}.layout>div:first-child{width:73%}}
+@media(max-width:768px){#page-header.full_page{height:66vh;min-height:450px;background-position:65% center}#page-header.full_page #site-info{left:7%;width:86%;top:40%}#page-header:before{background:rgba(5,9,20,.38)}#site-title{font-size:42px!important}#site-info:before{font-size:10px;letter-spacing:3px}#site-subtitle{font-size:14px!important}#nav{height:64px;padding:0 6%}.layout{padding-top:16px}#recent-posts>.recent-post-item{height:auto;min-height:280px}#recent-posts>.recent-post-item>.recent-post-info>.article-title{font-size:23px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

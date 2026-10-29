@@ -4,7 +4,7 @@
 
 源码仓库：https://github.com/joe419476-cell/joe419476-cell.github.io
 
-使用 Hexo 和 Landscape 主题。推送到 main 分支后，GitHub Actions 自动构建并发布到 GitHub Pages。
+使用 Hexo 和 Butterfly 主题，定制深色星轨背景、文章卡片和作者侧栏。推送到 main 分支后，GitHub Actions 自动构建并发布到 GitHub Pages。
 
 ## 本地预览
 
@@ -40,7 +40,9 @@ git push
 ## 修改信息
 
 - _config.yml：博客标题、副标题、作者、网站地址。
-- _config.landscape.yml：菜单、侧栏、GitHub 链接。
+- _config.butterfly.yml：菜单、侧栏、深色模式、封面与 GitHub 链接。
+- source/css/custom.css：主题配色与布局定制。
+- source/img/：本地星轨插画和头像。
 - source/about/index.md：个人介绍。
 - source/_posts/：文章。
 

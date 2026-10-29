@@ -1,0 +1,97 @@
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-box-archive
+  关于: /about/ || fas fa-user-astronaut
+  GitHub: https://github.com/joe419476-cell || fab fa-github
+social:
+  fab fa-github: https://github.com/joe419476-cell || GitHub
+favicon: /img/avatar.svg
+avatar:
+  img: /img/avatar.svg
+  effect: false
+index_img: /img/orbit.svg
+default_top_img: /img/orbit.svg
+archive_img: /img/orbit.svg
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /img/orbit.svg
+index_layout: 1
+index_post_content:
+  method: 2
+  length: 160
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - 保持好奇，把想法变成现实。
+display_mode: dark
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+code_blocks:
+  theme: pale night
+  macStyle: true
+  copy: true
+  language: true
+  shrink: false
+  fullpage: true
+toc:
+  post: true
+  page: false
+  number: true
+post_copyright:
+  enable: false
+aside:
+  enable: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 记录技术探索，也收藏生活灵感。
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 在 GitHub 找到我
+      link: https://github.com/joe419476-cell
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的数字花园。这里收藏代码、灵感与每一次新的发现。
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_webinfo:
+    enable: false
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: false
+  custom_text: 保持热爱，奔赴下一场探索。
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+readmode: true
+rightside_scroll_percent: true
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: true
+  option:
+    fontawesome: /vendor/fontawesome/css/all.min.css
+share:
+  use:
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">

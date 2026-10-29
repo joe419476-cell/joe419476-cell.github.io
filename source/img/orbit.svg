@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+ <defs>
+  <radialGradient id="sky"><stop stop-color="#202452"/><stop offset="1" stop-color="#070b19"/></radialGradient>
+  <radialGradient id="planet" cx="30%" cy="20%"><stop stop-color="#bbf5ff"/><stop offset=".18" stop-color="#658ff5"/><stop offset=".5" stop-color="#5c3f9d"/><stop offset="1" stop-color="#0a1027"/></radialGradient>
+  <linearGradient id="ring"><stop stop-color="#49d5ef" stop-opacity="0"/><stop offset=".4" stop-color="#86edff"/><stop offset=".7" stop-color="#a083ff"/><stop offset="1" stop-color="#704cec" stop-opacity="0"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="42"/></filter>
+  <pattern id="grid" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#a0bdff" stroke-opacity=".045"/></pattern>
+ </defs>
+ <path fill="url(#sky)" d="M0 0h1920v1080H0z"/>
+ <ellipse cx="1430" cy="520" rx="350" ry="310" fill="#6355ed" opacity=".2" filter="url(#glow)"/>
+ <ellipse cx="350" cy="950" rx="450" ry="200" fill="#0b92b4" opacity=".13" filter="url(#glow)"/>
+ <path fill="url(#grid)" d="M0 0h1920v1080H0z"/>
+ <g fill="#d0e6ff" opacity=".7"><circle cx="90" cy="240" r="1.6"/><circle cx="230" cy="670" r="1"/><circle cx="360" cy="150" r="2"/><circle cx="630" cy="350" r="1.5"/><circle cx="770" cy="120" r="1"/><circle cx="950" cy="800" r="2"/><circle cx="1080" cy="230" r="1.2"/><circle cx="1700" cy="180" r="1.6"/><circle cx="1800" cy="760" r="2"/><circle cx="1600" cy="920" r="1"/><circle cx="510" cy="840" r="1.3"/><circle cx="1450" cy="110" r="1"/><circle cx="1200" cy="960" r="1.4"/></g>
+ <g transform="translate(1430 510) rotate(-27)">
+  <ellipse rx="370" ry="108" fill="none" stroke="url(#ring)" stroke-width="2" opacity=".5"/>
+  <ellipse rx="400" ry="125" fill="none" stroke="#a5baff" stroke-width=".7" opacity=".16"/>
+  <circle r="192" fill="url(#planet)"/>
+  <path d="M-370 0A370 108 0 0 0 370 0" fill="none" stroke="url(#ring)" stroke-width="4"/>
+  <path d="M-350 14A350 100 0 0 0 350 14" fill="none" stroke="url(#ring)" stroke-width="1" opacity=".6"/>
+ </g>
+ <g fill="none" stroke="#82cce9" opacity=".16"><circle cx="1430" cy="510" r="365" stroke-dasharray="3 15"/><path d="M120 970H700M120 960v20M700 960v20"/></g>
+</svg>
