@@ -1,0 +1,50 @@
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - run: npm ci
+      - name: Build Hexo
+        env:
+          PAGES_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          node -e 'const fs = require("node:fs"); const url = new URL(process.env.PAGES_URL); fs.writeFileSync("_config.pages.json", JSON.stringify({url: url.href, root: url.pathname.endsWith("/") ? url.pathname : url.pathname + "/"}));'
+          npx hexo generate --config _config.yml,_config.pages.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
